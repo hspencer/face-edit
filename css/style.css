@@ -1,6 +1,6 @@
 body{
 	font-family: Helvetica; "Open Sans";
-	background-color: #E1EEC5;
+	background-color: #EDE0EB;
 	max-width: 800px;
 	margin: 0 auto;
 }
@@ -12,11 +12,46 @@ body{
 }
 
 .instructions{
-	padding: 2em;
+	
+}
+
+dt{
+	display: inline-block;
+	font-weight: bold;
+	padding: 3px 6px;
+	border: 1px solid #000;
+	border-radius: 3px;
+    margin-bottom: 1em;
+    background-color: white;
+}
+
+dd{
+	display: inline-block;
+	margin: 0;
+}
+
+dd:after{
+	clear: all;
+}
+
+.toggle{
+	font-size: 75%;
+	//text-transform: uppercase;
+	color: white;
+	font-weight: bolder;
+	padding: 2px 3px;
+	border: 1px solid #000;
+	border-radius: 3px;
+	background-color: red;
+
+}
+
+.true{
+	background-color: green !important;
 }
 
 #output{
-	float: right;
+	/*float: right;*/
 	display: inline-block;
 	width: 350px;
 	font-family: monospace;

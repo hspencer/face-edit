@@ -13,7 +13,6 @@ function Node(x, y, index) {
   }
 
   this.edit = function() {
-    print("editting...");
     fill("#FC4E11");
     if (this.isOver()) {
       if (mouseIsPressed) {

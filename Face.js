@@ -22,8 +22,9 @@ function Face(x, y, sc, expression) {
     }
 
     if (this.edit) {
-      for (var i = 0; i < 39; i++) {
+      for (var i = 0; i < l; i++) {
         this.exp[i].edit();
+        output.innerHTML = getExpression();
       }
     }
     pop();
