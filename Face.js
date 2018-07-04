@@ -83,12 +83,15 @@ function Face(x, y, sc, expression) {
   }
   this.drawNose = function() {
     noFill();
-    strokeWeight(5);
+    strokeWeight(3);
+    strokeCap(ROUND);
     stroke(0);
     beginShape();
     vertex(this.exp[30].x, this.exp[30].y);
-    vertex(this.exp[31].x, this.exp[31].y);
-    vertex(this.exp[32].x, this.exp[32].y);
+    curveVertex(this.exp[30].x, this.exp[30].y);
+    curveVertex(this.exp[31].x, this.exp[31].y);
+    curveVertex(this.exp[32].x, this.exp[32].y);
+    vertex(this.exp[30].x, this.exp[30].y);
     endShape();
   }
 
@@ -111,7 +114,7 @@ function Face(x, y, sc, expression) {
     this.exp[28].x = -this.exp[29].x;
     this.exp[33].x = -this.exp[36].x;
     this.exp[34].x = -this.exp[35].x;
-    this.exp[38].x = -this.exp[37].x;
+    this.exp[37].x = -this.exp[38].x;
     this.exp[11].y = this.exp[1].y;
     this.exp[10].y = this.exp[2].y;
     this.exp[9].y = this.exp[3].y;
@@ -128,6 +131,6 @@ function Face(x, y, sc, expression) {
     this.exp[28].y = this.exp[29].y;
     this.exp[33].y = this.exp[36].y;
     this.exp[34].y = this.exp[35].y;
-    this.exp[38].y = this.exp[37].y;
+    this.exp[37].y = this.exp[38].y;
   }
 }
