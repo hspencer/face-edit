@@ -1,0 +1,26 @@
+body{
+	font-family: Helvetica; "Open Sans";
+	background-color: #E1EEC5;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+#sketch{
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+
+.instructions{
+	padding: 2em;
+}
+
+#output{
+	float: right;
+	display: inline-block;
+	width: 350px;
+	font-family: monospace;
+	white-space: pre-wrap;
+	padding: 1em;
+	float: right;
+}
