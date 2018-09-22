@@ -13,12 +13,23 @@ function Node(x, y, index) {
   }
 
   this.edit = function() {
-    fill("#FC4E11");
+    fill("#FC4E11", 90);
     if (this.isOver()) {
       if (mouseIsPressed) {
         this.x = mouseX - width/2;
         this.y = mouseY - height/2;
       }
+    }
+  }
+
+  this.draw = function(){
+    
+    if(face.edit){
+      this.edit();
+    }
+
+    if (this.isOver()) {
+      fill("#FC4E11");
       strokeWeight(2);
       stroke(0);
     } else {
@@ -27,5 +38,6 @@ function Node(x, y, index) {
     ellipse(this.x, this.y, this.d, this.d);
     fill(0);
     text(this.i, this.x, this.y);
+
   }
 }

@@ -13,15 +13,15 @@ function setup() {
 
   node[0] = new Node(0, -139, "0"); 
   node[1] = new Node(88, -133, "1");  
-  node[2] = new Node(116.5, -72, "2");  
+  node[2] = new Node(112.5, -66, "2");  
   node[3] = new Node(106.5, 6, "3");  
-  node[4] = new Node(107.5, 78, "4"); 
+  node[4] = new Node(103.5, 80, "4"); 
   node[5] = new Node(68.5, 178, "5"); 
   node[6] = new Node(0, 179, "6");  
   node[7] = new Node(-68.5, 178, "7");  
-  node[8] = new Node(-107.5, 78, "8");  
+  node[8] = new Node(-103.5, 80, "8");  
   node[9] = new Node(-106.5, 6, "9"); 
-  node[10] = new Node(-116.5, -72, "10"); 
+  node[10] = new Node(-112.5, -66, "10"); 
   node[11] = new Node(-88, -133, "11"); 
   node[12] = new Node(-87, -7, "12"); 
   node[13] = new Node(-69, -23, "13");  
@@ -44,12 +44,12 @@ function setup() {
   node[30] = new Node(4, 12, "30"); 
   node[31] = new Node(15.5, 72, "31");  
   node[32] = new Node(-6.5, 73, "32");  
-  node[33] = new Node(-38, 107, "33");  
-  node[34] = new Node(-11.5, 110, "34");  
-  node[35] = new Node(11.5, 110, "35"); 
-  node[36] = new Node(38, 107, "36"); 
-  node[37] = new Node(-15.5, 135, "37");  
-  node[38] = new Node(15.5, 135, "38"); 
+  node[33] = new Node(-27.5, 113, "33");  
+  node[34] = new Node(-6.5, 116, "34"); 
+  node[35] = new Node(6.5, 116, "35");  
+  node[36] = new Node(27.5, 113, "36"); 
+  node[37] = new Node(-11.5, 124, "37");  
+  node[38] = new Node(11.5, 124, "38");
 
   l = node.length;
 

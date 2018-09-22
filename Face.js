@@ -73,15 +73,17 @@ function Face(x, y, sc, expression) {
     ellipse(this.exp[28].x, this.exp[28].y, 20, 20);
     ellipse(this.exp[29].x, this.exp[29].y, 20, 20);
   }
+
   this.drawMouth = function() {
-    noStroke();
+    //noStroke();
     fill(0);
     beginShape();
     vertex(this.exp[33].x, this.exp[33].y);
     bezierVertex(this.exp[34].x, this.exp[34].y, this.exp[35].x, this.exp[35].y, this.exp[36].x, this.exp[36].y);
     bezierVertex(this.exp[38].x, this.exp[38].y, this.exp[37].x, this.exp[37].y, this.exp[33].x, this.exp[33].y);
-    endShape();
+    endShape(CLOSE);
   }
+
   this.drawNose = function() {
     noFill();
     strokeWeight(3);
